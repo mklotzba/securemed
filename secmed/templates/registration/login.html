@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% block content %}
+<!-- templates/registration/login.html -->
+
+<section class="engine"><a href="https://mobiri.se/p">website templates free download</a></section><section class="mbr-section form1 cid-rc4DM4Y3eT" id="form1-b">
+
+    
+
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="title col-12 col-lg-8">
+                <h2 class="mbr-section-title align-center pb-3 mbr-fonts-style display-2">
+                    LOGIN
+                </h2>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="media-container-column col-lg-8" >
+<!--            
+                    <form class="mbr-form" action="" method="post" data-form-title="Secure Med Login"><input type="hidden" >
+-->                    	
+					<form method="post" href="">
+
+  						{% csrf_token %}
+                        <div class="row row-sm-offset">
+                            <div class="col-md-4 multi-horizontal" data-for="username">
+                                <div class="form-group">
+                                    <label class="form-control-label mbr-fonts-style display-7" for="name-form1-b">Username</label>
+                                    {{form.username}}
+<!--								if you want to move the style back intot the text inputs above
+									you can use django widget tweaks 
+
+                                    <input type="text" class="form-control" name="username" data-form-field="username" required="" id="username-form1-b">
+-->
+                                </div>
+                            </div>
+                            <div class="col-md-4 multi-horizontal" data-for="password">
+                                <div class="form-group">
+                                    <label class="form-control-label mbr-fonts-style display-7" for="password">Password</label>
+                                    {{form.password}}
+<!--                                
+                                    <input type="password" class="form-control" name="email" data-form-field="password" required="" id="password-form1-b">
+-->                                    
+                                </div>
+                            </div>
+                        </div>
+            
+                        <span class="input-group-btn">
+                            <button href="" type="submit" class="btn btn-primary btn-form display-4">Login</button>
+                        </span>
+                    </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+{% endblock %}
