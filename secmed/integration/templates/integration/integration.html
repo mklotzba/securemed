@@ -1,5 +1,8 @@
 {%  extends 'base.html' %}
 {% block content %}
+
+
+
 <section class="engine"><a href="https://mobiri.se/p">website templates free download</a></section><section class="mbr-section form1 cid-rc4DM4Y3eT" id="form1-b">
 
     
@@ -9,7 +12,7 @@
         <div class="row justify-content-center">
             <div class="title col-12 col-lg-8">
                 <h2 class="mbr-section-title align-center pb-3 mbr-fonts-style display-2">
-                    CONTACT FORM
+                    Integration with ISE and DNAC 
                 </h2>
                 <h3 class="mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style display-5">
                     Easily add subscribe and contact forms without any server-side integration.
@@ -48,6 +51,8 @@
                         <div class="form-group" data-for="message">
                             <label class="form-control-label mbr-fonts-style display-7" for="message-form1-b">Message</label>
                             <textarea type="text" class="form-control" name="message" rows="7" data-form-field="Message" id="message-form1-b"></textarea>
+                            {{form.as_p}}
+
                         </div>
             
                         <span class="input-group-btn">
@@ -58,4 +63,5 @@
         </div>
     </div>
 </section>
+
 {% endblock %}
